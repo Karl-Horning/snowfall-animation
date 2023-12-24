@@ -39,7 +39,7 @@ const initializeCanvas = () => {
 
     for (let i = 0; i < snowfall.numOfFlakes; i++) {
         const flake = new Snowflake();
-        flake.y = Math.random() * snowfall.canvasHeight;
+        flake.y = -Math.random() * snowfall.canvasHeight; // Use minus to start above the canvas when page loads or plus to start mid animation
         snowfall.flakes.push(flake);
     }
 
