@@ -1,6 +1,6 @@
 # Snowfall Animation
 
-![Snowfall Animation](./img/snowfall.png)
+![Snowfall Animation](./src/img/snowfall.png)
 
 ## Description
 
@@ -8,7 +8,7 @@ Experience the magic of a winter wonderland with this enchanting snowfall animat
 
 ## Preview
 
-![Snowfall Animation](./img/snowfall.gif)
+![Snowfall Animation](./src/img/snowfall.gif)
 
 ## Features
 
@@ -55,6 +55,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
+- Uses the trial version of the fun [Hello Christmas](https://www.dafont.com/hello-christmas.font) font from [Zetafonts](https://www.zetafonts.com).
 - Thanks to [Tailwind CSS](https://tailwindcss.com/) for providing the base styles.
 
 ## Author
