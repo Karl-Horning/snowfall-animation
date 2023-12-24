@@ -1,19 +1,17 @@
-@font-face {
-    font-family: "Hello Christmas";
-    src: url("../fonts/Hello-Christmas-trial.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
     animation: christmasLights 10s infinite alternate;
-    font-family: "Hello Christmas", sans-serif;
     margin: 0;
     overflow: hidden;
 }
 
-h1 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+.svg-container {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
     z-index: 0; /* Set text below canvas */
 }
 
