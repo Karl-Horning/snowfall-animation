@@ -1,5 +1,19 @@
 "use strict";
 
+/**
+ * @typedef {Object} Snowfall
+ * @property {number | null} animationId - The ID of the animation frame.
+ * @property {string} backgroundColor - The background colour of the snowfall.
+ * @property {HTMLCanvasElement | null} canvas - The HTML canvas element.
+ * @property {CanvasRenderingContext2D | null} canvasContext - The 2D rendering context of the canvas.
+ * @property {number} canvasHeight - The height of the canvas.
+ * @property {number} canvasWidth - The width of the canvas.
+ * @property {number} DOUBLE_PI - Double the value of Math.PI.
+ * @property {Snowflake[]} flakes - An array containing snowflake objects.
+ * @property {number} maxSnowflakeHeight - The maximum height of a snowflake.
+ * @property {number} numOfFlakes - The number of snowflakes.
+ * @property {number} snowFallSpeed - The speed at which snowflakes fall.
+ */
 const snowfall = {
     animationId: null,
     backgroundColor: "hsl(0, 0%, 100%)", // Customize snow colour
@@ -14,6 +28,9 @@ const snowfall = {
     snowFallSpeed: 4,
 };
 
+/**
+ * Initializes the canvas and starts the animation.
+ */
 const initializeCanvas = () => {
     snowfall.canvas = document.createElement("canvas");
     document.body.appendChild(snowfall.canvas);
@@ -29,19 +46,31 @@ const initializeCanvas = () => {
     startAnimation();
 };
 
+/**
+ * Resizes the canvas based on the window's dimensions.
+ */
 function resizeCanvas() {
     snowfall.canvasWidth = snowfall.canvas.width = window.innerWidth;
     snowfall.canvasHeight = snowfall.canvas.height = window.innerHeight;
 }
 
+/**
+ * Starts the snowfall animation.
+ */
 const startAnimation = () => {
     snowfall.animationId = requestAnimationFrame(drawSnowfall);
 };
 
+/**
+ * Stops the snowfall animation.
+ */
 const stopAnimation = () => {
     cancelAnimationFrame(snowfall.animationId);
 };
 
+/**
+ * Draws the snowfall on the canvas.
+ */
 const drawSnowfall = () => {
     const flakesLength = snowfall.flakes.length;
     snowfall.animationId = requestAnimationFrame(drawSnowfall);
@@ -59,6 +88,9 @@ const drawSnowfall = () => {
     snowfall.canvasContext.fill();
 };
 
+/**
+ * Represents a snowflake.
+ */
 class Snowflake {
     constructor() {
         this.reset();
@@ -102,5 +134,13 @@ class Snowflake {
     }
 }
 
+// Event listeners
+/**
+ * Initializes the canvas and starts the animation when the window is loaded.
+ */
 window.addEventListener("load", initializeCanvas);
+
+/**
+ * Resizes the canvas when the window is resized.
+ */
 window.addEventListener("resize", resizeCanvas);
