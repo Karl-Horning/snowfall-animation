@@ -2,6 +2,19 @@
 
 ![Snowfall Animation](./src/img/snowfall.png)
 
+## Table of Contents
+
+- [Description](#description)
+- [Preview](#preview)
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+- [Author](#author)
+
 ## Description
 
 Experience the magic of a winter wonderland with this enchanting snowfall animation created using SVG, HTML5 canvas, and JavaScript. The animation features gracefully falling snowflakes, perfect for adding a festive touch to your web projects.
