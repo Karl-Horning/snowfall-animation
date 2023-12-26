@@ -8,11 +8,7 @@ Experience the magic of a winter wonderland with this enchanting snowfall animat
 
 ## Preview
 
-<video src="./src/videos/snowfall.mp4" controls title="Title"></video>
-
-[![Watch the video](./src/img/snowfall.png)](./src/videos/snowfall.mp4)
-
-[<img src="./src/img/snowfall.png" />](./src/videos/snowfall.mp4)
+![Snowfall Animation](./src/img/snowfall.gif)
 
 ## Features
 
