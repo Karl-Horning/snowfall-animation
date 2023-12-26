@@ -8,7 +8,7 @@ Experience the magic of a winter wonderland with this enchanting snowfall animat
 
 ## Preview
 
-![Snowfall Animation](./src/img/snowfall.gif)
+<img src="./src/img/snowfall.gif" alt="Snowfall GIF" width="100%" height="auto">
 
 ## Features
 
